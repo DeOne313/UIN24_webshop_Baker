@@ -14,3 +14,8 @@ products.map((products, index) => productHTML += `<article class="product-card">
 
 //Finn #productlist, og fyll den med verdiene i variabelen productHTML.
 document.getElementById("productlist").innerHTML = productHTML
+
+//Lage toggle-funksjonalitet for handlevogn
+document.getElementById("shoppingcart").addEventListener("click", function(){
+    document.getElementById("cart").classList.toggle("visible")
+})
